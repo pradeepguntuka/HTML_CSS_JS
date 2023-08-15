@@ -1,0 +1,30 @@
+<html>
+<head>
+
+    <title>Video_Slider</title>
+    <link rel="stylesheet" href="./vid.css">
+</head>
+<body>
+    
+    <div class="container">
+        <video src="vid1.mp4" class="slider" autoplay loop muted controls></video>
+
+        <ul>
+            <li onclick="videoslider('vid1.mp4')"><video src="vid1.mp4"></video></li>
+            <li onclick="videoslider('vid2.mp4')"><video src="vid2.mp4"></video></li>
+            <li onclick="videoslider('vid3.mp4')"><video src="vid3.mp4"></video></li>
+            <li onclick="videoslider('vid4.mp4')"><video src="vid4.mp4"></video></li>
+        </ul>
+    </div>
+
+
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+
+</body>
+</html>
